@@ -11,37 +11,22 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string> https://dazhifu.github.io/filemanager/download/jyfxpt.ipa</string>
+					<string>http://mo.ccccic.com.cn:8088/WebParser/appinstall/ios/zjtzoapad.ipa</string>
 				</dict>
-				<dict>
-					<key>kind</key>
-					<string>display-image</string>
-					<key>needs-shine</key>
-					<true/>
-					<key>url</key>
-					<string>https://dazhifu.github.io/filemanager/download/icon.png</string>
-				</dict>
-				<dict>
-					<key>kind</key>
-					<string>full-size-image</string>
-					<key>needs-shine</key>
-					<true/>
-					<key>url</key>
-					<string>https://dazhifu.github.io/filemanager/download/icon.png</string>
-				</dict>
+
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.htsec.jyfxpt</string>
+				<string>com.ccccic.ydoa</string>
 				<key>bundle-version</key>
-				<string>0.0.1</string>
+				<string>1.0.1</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>subtitle</key>
-				<string>Everlight</string>
+				<string>中交投资有限公司移动OA</string>
 				<key>title</key>
-				<string>Everlight</string>
+				<string>中交投资有限公司移动OA</string>
 			</dict>
 		</dict>
 	</array>
