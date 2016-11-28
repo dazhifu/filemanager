@@ -19,7 +19,7 @@
 					<key>needs-shine</key>
 					<true/>
 					<key>url</key>
-					<string>https://dazhifu.github.io/filemanager/download/icon.png</string>
+					<string>https://dazhifu.github.io/filemanager/download/icon57.png</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -27,7 +27,7 @@
 					<key>needs-shine</key>
 					<true/>
 					<key>url</key>
-					<string>https://dazhifu.github.io/filemanager/download/icon.png</string>
+					<string>https://dazhifu.github.io/filemanager/download/icon512.png</string>
 				</dict>
 			</array>
 			<key>metadata</key>
