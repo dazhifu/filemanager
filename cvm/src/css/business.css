@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0; }
+
+fieldset, img {
+  border: none; }
+
+img {
+  display: block; }
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  color: #D7D8E0;
+  text-decoration: none; }
+
+a:hover, a:active {
+  color:#D7D8E0; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  color:#D7D8E0;
+}
+
+/* layout头部样式 */
+.layout {
+  width: 90%;
+  min-width: 1200px;
+  margin: 0 auto; }
+
+/* text头部样式 */
+/*.text {*/
+  /*background: -moz-linear-gradient(0% #47474a, 50% #434346, 100% #3e3e41);*/
+  /*box-shadow: 0px 1px 13px #000000;*/
+  /*height: 50px;*/
+  /*line-height: 50px;*/
+  /*margin: 18px 0; }*/
+  /*.text a {*/
+    /*color: #28DBDE;*/
+    /*margin-left: 20px;*/
+    /*cursor: pointer; }*/
+
+/* nav商品列表菜单样式 */
+/*.nav {*/
+  /*min-height: 345px;*/
+  /*background: -moz-linear-gradient(0% #47474a, 50% #434346, 100% #3e3e41);*/
+  /*box-shadow: 0px 1px 13px #000000;*/
+  /*padding-left: 60px;*/
+  /*overflow: hidden;*/
+  /*box-sizing: border-box;*/
+  /*padding-top: 40px;*/
+  /*color: #fff; }*/
+  /*.nav > div {*/
+    /*overflow: hidden;*/
+    /*margin-top: 15px; }*/
+    /*.nav > div > span {*/
+      /*height: 100%;*/
+      /*line-height: 60px;*/
+      /*float: left;*/
+      /*padding-left: 69px;*/
+      /*width: 200px;*/
+      /*box-sizing: border-box; }*/
+    /*.nav > div > ul {*/
+      /*float: left;*/
+      /*overflow: hidden; }*/
+      /*.nav > div > ul li {*/
+        /*cursor: pointer;*/
+        /*float: left;*/
+        /*margin: 0 10px; }*/
+  /*.nav .navVender > span {*/
+    /*background: url(../img/icon-changshang.png) no-repeat left center;*/
+    /*background-size: 48px 48px; }*/
+  /*.nav .navVender > ul {*/
+    /*line-height: 60px; }*/
+    /*.nav .navVender > ul li {*/
+      /*font-size: 20px;*/
+      /*padding-left: 60px;*/
+      /*margin-right: 70px; }*/
+      /*.nav .navVender > ul li:nth-child(1) {*/
+        /*background: url(../img/icon-changshang-1.png) no-repeat left center; }*/
+      /*.nav .navVender > ul li:nth-child(2) {*/
+        /*background: url(../img/icon-changshang-2.png) no-repeat left center; }*/
+      /*.nav .navVender > ul li:nth-child(3) {*/
+        /*background: url(../img/icon-changshang-3.png) no-repeat left center; }*/
+  /*.nav .navBrand > span {*/
+    /*background: url(../img/icon-pinpai.png) no-repeat left center;*/
+    /*background-size: 48px 48px; }*/
+  /*.nav .navBrand > ul li {*/
+    /*border-radius: 15px;*/
+    /*background: #3F3F41;*/
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    /*padding: 0 20px;*/
+    /*margin-top: 15px;*/
+    /*font-size: 18px; }*/
+  /*.nav .navStyle > span {*/
+    /*background: url(../img/icon-chexing.png) no-repeat left center;*/
+    /*background-size: 48px 48px; }*/
+  /*.nav .navStyle ul li {*/
+    /*border-radius: 15px;*/
+    /*background: #3F3F41;*/
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    /*padding: 0 20px;*/
+    /*margin-top: 15px;*/
+    /*font-size: 14px; }*/
+
+
+
+/* local头部样式 */
+/*.content {*/
+  /*margin: 18px auto;*/
+  /*background: -moz-linear-gradient(0% #47474a, 90% #434346, 100% #3e3e41);*/
+  /*box-shadow: 0px 1px 13px #000000;*/
+  /*overflow: hidden; }*/
+
+/*.local {*/
+  /*height: 675px;*/
+  /*width: 60%;*/
+  /*float: left; }*/
+
+/*.city {*/
+  /*float: right;*/
+  /*height: 675px;*/
+  /*width: 40%; }*/
+
+/*.car {*/
+  /*overflow: hidden;*/
+  /*margin-bottom: 43px; }*/
+  /*.car > div:nth-child(1), .car div:nth-child(3) {*/
+    /*margin-right: 1%;*/
+    /*width: 55%; }*/
+  /*.car > div:nth-child(2), .car div:nth-child(4) {*/
+    /*width: 44%; }*/
+  /*.car > div:nth-child(1), .car div:nth-child(2) {*/
+    /*margin-bottom: 12px; }*/
+  /*.car .carColor, .car .carMortgage, .car .carUse, .car .carNew {*/
+    /*height: 455px;*/
+    /*background: #232534;*/
+    /*float: left;*/
+    /*overflow: hidden; }*/
+.content {
+  margin: 18px auto;
+  /*background: -moz-linear-gradient(0% #47474a, 90% #434346, 100% #3e3e41);*/
+  background:#47474A;
+  box-shadow: 0 1px 5px #000000;
+  overflow: hidden; }
+.localtitle,.cartitle{
+  background: -moz-linear-gradient(top,#47474a,#3e3e40);
+  background: -webkit-linear-gradient(top,#47474a,#3e3e40);
+  padding-left:25px;
+  height:47px;
+  line-height:47px;
+  /*background:#444447;*/
+}
+.localtitle span{
+  display:inline-block;
+  padding-left:10px;
+}
+.cartitle span{
+  display:inline-block;
+  padding-left:10px;
+}
+.local {
+  height: 640px;
+  width: 60%;
+  float: left; }
+
+.city {
+  float: right;
+  height: 640px;
+  width: 40%; }
+
+.car {
+  height:950px;
+  margin-bottom: 43px; }
+
+.car >div:nth-child(1), .car > div:nth-child(3) {
+  margin-right: 1%;
+}
+.car >div:nth-child(2), .car> div:nth-child(4) {
+}
+.car >div:nth-child(1), .car >div:nth-child(2) {
+  margin-bottom: 12px; }
+.car >div{
+  width:49.5%;
+
+  background:#47474A ;
+  float:left;
+  box-shadow: 0 1px 5px #000000;
+}
+.car .carColor, .car .carMortgage, .car .carUse, .car .carNew {
+  height: 420px;
+  width:100%;
+}

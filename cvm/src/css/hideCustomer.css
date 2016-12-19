@@ -1,0 +1,48 @@
+.layout{
+  width:90%;
+  min-width:1200px;
+  margin:0 auto;
+  color:#DBDBE1;
+}
+	.layout .layoutTitle{
+	  height:47px;
+	  line-height:47px;
+	 /* background:#424242;*/
+	  background: -moz-linear-gradient(top,#47474a,#3e3e40);
+	  background: -webkit-linear-gradient(top,#47474a,#3e3e40);
+	  padding-left:48px;
+	}
+	.layout .layoutTitle span{
+	  display:block;
+	  padding-left:25px;
+	}
+	.age,.work,.money,.life{
+		margin-top:18px;
+		background:#47474A;
+		box-shadow: 0px 1px 5px #000000;
+	}
+	.mainPic{
+		height:787px;
+	}
+	.carTop {
+		overflow:hidden;
+		/*clear: both;*/
+		margin-bottom: 37px;
+		font-size: 0;
+	}
+	.carTop > div{
+		width:49.5%;
+		box-sizing: border-box;
+		float:left;
+		/*height:410px;*/
+		margin-top:18px;
+		background:#47474A;
+		box-shadow: 0px 1px 5px #000000;
+		font-size:16px;
+	}
+	.carTop > div:nth-child(2n-1){
+		margin-right:1%;
+	}
+	.carTop > div > div:nth-child(2){
+		height:359px;
+	}

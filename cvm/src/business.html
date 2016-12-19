@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/navcommon.css" />
+		<link rel="stylesheet" type="text/css" href="css/business.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+	</head>
+		<script type="text/javascript" src="lib/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/business.js" ></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js" ></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js" ></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM" ></script>
+
+
+	     <script src="./lib/vue.min.js"></script>
+	     <script src="./js/common.js"></script>
+	<body>
+		<!--
+        	作者：offline
+        	时间：2016-12-12
+        	描述：导航菜单
+        -->
+		<div class="header">
+			<div class="logo">
+				<a href="index.html">LOGO</a>
+			</div>
+			<ul >
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a class="liback" href="javascript:;">经营分析</a>
+					<ul class="detail">
+						<li><a href="business.html">产品宏观分析</a></li>
+						<li><a href="businessNewCar.html">新车上牌分析</a></li>
+						<li><a href="businessCarCompetition.html">车辆竞品分析</a></li>
+						<li><a href="businessCarPeople.html">客群宏观分析</a></li>
+						<li><a href="business2sShop.html">2S店选址</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">销售线索</a>
+					<ul class="detail">
+						<li><a href="javascript:;">销售线索明细</a></li>
+						<li><a href="Backtracking.html">线上行为回溯</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">潜客分析</a>
+					<ul class="detail">
+						<li><a href="javascript:;">用户画像</a></li>
+						<li><a href="javascript:;">潜客查询</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">现客分析</a>
+					<ul class="detail">
+						<li><a href="javascript:;">用户画像</a></li>
+						<li><a href="javascript:;">现客分析</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="businessAbandon.html">弃客用户分析</a>
+					<ul class="detail">
+						<li><a href="javascript:;">流向分析</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">车辆生命周期</a>
+					<ul class="detail">
+						<li><a href="javascript:;">车辆流转</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<!--
+        	作者：offline
+        	时间：2016-12-12
+        	描述：当前菜单列表展示
+        -->
+		<div class="layout">
+			<div class="text">
+				<a>经营分析  ></a><a>产品宏观分析</a>
+				<p>
+					<span>荣威</span>
+					<span>e50</span>
+				</p>
+				<i class="opac"></i>
+			</div>
+
+		</div>
+		<!--
+        	作者：offline
+        	时间：2016-12-12
+        	描述：产品列表分类
+        -->
+		<div class="layout"  id = 'category'>
+			<div class="nav">
+				<div class="navVender">
+					<span>厂商:</span>
+					<ul>
+						<li  v-for="manufacturer in manufacturers" v-on:click="manufacturerOnclick($index)"
+							 v-bind:class="{ 'venderActive': $index == manufacturerIndex }"  v-text="manufacturer.name">
+						</li>
+
+					</ul>
+				</div>
+				<div class="navBrand">
+					<span>品牌:</span>
+
+					<ul>
+						<li  v-for="brand in brands" v-on:click="brandOnclick($index)"
+							 v-bind:class="{ 'brandActive': $index == brandIndex }"  v-text="brand.name">
+						</li>
+					</ul>
+				</div>
+				<div class="navStyle">
+					<span>车型:</span>
+					<ul>
+						<li  v-for="model in models" v-on:click="modelOnclick($index)"
+							 v-bind:class="{ 'styleActive': $index == modelIndex }"  v-text="model.name">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：offline
+        	时间：2016-12-12
+        	描述：图像数据展示
+        -->
+		<div class="layout content">
+			<div class="localtitle">
+				<span class="iconfont icon-dingwei" style="font-size: 25px;"></span><span>地域分布:</span>
+			</div>
+			<div class="local" id="local">
+			</div>
+			<div class="city" id="city">
+			</div>
+		</div>
+		<div class="layout car">
+			<div >
+				<div class="cartitle">
+					<span class="iconfont icon-yanse" style="font-size: 25px;"></span><span>车辆颜色分布:</span>
+				</div>
+				<div class="carColor" id="carColor">
+				</div>
+			</div>
+			<div>
+				<div class="cartitle">
+					<span class="iconfont icon-diya" style="font-size: 25px;"></span><span>抵押情况:</span>
+				</div>
+				<div class="carMortgage" id="carMortgage">
+				</div>
+			</div>
+			<div>
+				<div class="cartitle">
+					<span class="iconfont icon-hiiniconxingzhi011bi1" style="font-size: 25px;"></span><span>使用性质:</span>
+				</div>
+				<div class="carUse"id="carUse">
+				</div>
+			</div>
+			<div>
+				<div class="cartitle">
+					<span class="iconfont icon-new" style="font-size: 25px;"></span><span>新车占比:</span>
+				</div>
+				<div class="carNew" id="carNew">
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：offline
+        	时间：2016-12-12
+        	描述：公司
+        -->
+		<div class="footer">
+			<span>深圳雁联移动科技有限公司</span>
+		</div>
+		<script src="./js/category.js"></script>
+	</body>
+</html>

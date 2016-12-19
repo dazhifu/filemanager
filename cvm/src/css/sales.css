@@ -1,0 +1,112 @@
+.layout{
+  width:90%;
+  min-width:1200px;
+  margin:0 auto;
+  color:#DBDBE1;
+}
+	.layout .layoutTitle{
+	  height:47px;
+	  line-height:47px;
+	 /* background:#424242;*/
+	  background: -moz-linear-gradient(top,#47474a,#3e3e40);
+	  background: -webkit-linear-gradient(top,#47474a,#3e3e40);
+	  padding-left:48px;
+	}
+	.layout .layoutTitle span{
+	  display:block;
+	  padding-left:25px;
+	}
+	.main{
+		margin-top:18px;
+		margin-bottom:37px;
+		background:#47474A;
+	}
+	.main .content{
+		width:100%;
+	}
+		.main .content .selectCity{
+			height:90px;
+			line-height:90px;
+			text-align:center;
+			color:#fff;
+			font-size:16px;
+		}
+		.main .content .selectCity select{
+			margin-right:70px;
+			font-size:16px;
+			color:#000;
+			text-align:center;
+			background:#424245;
+			outline: none;
+			border-radius:5px;
+			height:30px;
+			line-height:30px;
+			color:#fff;
+			padding:0 20px;
+		}
+		.main .content .selectCity select option{
+				text-align:center;
+				
+		}
+	.showList{
+		width:91%;
+		margin:0 auto;
+	}
+	.showList ul{
+		height:42px;
+		line-height:42px;
+	}
+	.showList .showTitle li{
+		float:left;
+		width:11.11%;
+		text-align:center;
+	}
+		.showList .showTitle li:nth-child(2n){
+			background:#33A336;
+			
+		}
+		.showList .showTitle li:nth-child(2n-1){
+			background:#3BA73E;
+		}
+	
+	.showList .getList{
+		width:100%;
+		margin:0 auto;
+	}
+	.showList .getList tr{
+		margin-top:1px;
+	}
+	.showList .getList tr td{
+		display:inline-block;
+		width:11.11%;
+		height:42px;
+		line-height:42px;
+		text-align: center;
+		color:#44F048;
+	}
+		.showList .getList tr td:nth-child(2n-1){
+			background:#4C584F;
+		}
+		.showList .getList tr td:nth-child(2n){
+			background:#455148;
+		}
+		.page{
+			text-align: center;
+			margin-top:44px;
+			padding-bottom:44px;
+		}
+		.page a{
+			width:26px;
+			height:26px;
+			text-align: center;
+			line-height: 26px;
+			display:inline-block;
+			cursor: pointer;
+			margin:0 8px;
+			color:#44F048;
+		}
+		.page .currentpage{
+			background:#44F048;
+			color:#47474A;
+			border-radius:50%;
+		}
