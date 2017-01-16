@@ -12,7 +12,7 @@ window.onload=function(){
 				btn.style.borderLeft="0px";
 				btn.style.webkitAnimation = "change 1s linear infinite";
 				btn.style.width="42px";
-				btn.href="itms-services://?action=download-manifest&url=https://dazhifu.github.io/filemanager/app/ios/jyfxpt.plist";
+				btn.href="itms-services://?action=download-manifest&url=https://download.htsec.com/JYFXPT/ios/jyfxpt.plist";
 				//定时器更改样式
 				setTimeout(function(){
 					btn.style.webkitAnimation ="";
