@@ -6,17 +6,17 @@ window.onload=function(){
 				var icon = document.getElementById("icon-android");
 					icon.className="icon-ios";
 	               var softwareVersion = document.getElementById("softwareVersion");
-					softwareVersion.innerText="0.2.1 (Build 201) - 8.91 MB";
+					softwareVersion.innerText="1.0.7 (Build 1) - 2.8 MB";
 					     var datePublished = document.getElementById("datePublished");
-					datePublished.innerText="2016-09-01 11:24";
+					datePublished.innerText="2017-01-22 11:00";
 
 				link ="itms-services://?action=download-manifest&url=https://dazhifu.github.io/filemanager/jyfxpt/app/jyfxpt.plist";
 			}else{
 
 				  var softwareVersion = document.getElementById("softwareVersion");
-					softwareVersion.innerText="0.2.1 (Build 201) - 29.91 MB";
+					softwareVersion.innerText="1.0.7 (Build 1) - 26.2 MB";
 					     var datePublished = document.getElementById("datePublished");
-					datePublished.innerText="2016-09-01 11:24";
+					datePublished.innerText="2017-01-22 11:00";
 
 				link ="https://dazhifu.github.io/filemanager/jyfxpt/app/jyfxpt.apk";
 			}
