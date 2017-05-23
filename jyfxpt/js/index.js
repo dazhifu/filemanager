@@ -10,7 +10,7 @@ window.onload=function(){
 					     var datePublished = document.getElementById("datePublished");
 					datePublished.innerText="2017-01-22 11:00";
 
-				link ="itms-services://?action=download-manifest&url=https://dazhifu.github.io/filemanager/jyfxpt/app/jyfxpt.plist";
+				link ="https://itunes.apple.com/cn/app/qq%E5%9B%BD%E9%99%85%E7%89%88/id710380093?mt=8";
 			}else{
 
 				  var softwareVersion = document.getElementById("softwareVersion");
