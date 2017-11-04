@@ -33,15 +33,15 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.htsec.jyfxpt</string>
+				<string>com.siicfm.oa</string>
 				<key>bundle-version</key>
-				<string>0.0.1</string>
+				<string>1.0.0</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>subtitle</key>
-				<string>海通</string>
+				<string>国际创投</string>
 				<key>title</key>
-				<string>海通</string>
+				<string>国际创投</string>
 			</dict>
 		</dict>
 	</array>
